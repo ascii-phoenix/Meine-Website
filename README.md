@@ -14,11 +14,15 @@
 
 ## 30.4.2024
 
-- [ ] Prioritätenliste auf md ode docx erstellen und auf github hochladen
-- [ ] Visual Studio Code Instaliern und Curriculum Vitae von github auf ein Htpps datei kopieren
-- [ ] Bild meines gesicht einfügen
+- [x] Prioritätenliste auf md ode docx erstellen und auf github hochladen
+- [x] Visual Studio Code Instaliern und Curriculum Vitae von github auf ein Htpps datei kopieren
+- [x] Bild meines gesicht einfügen
 - [ ] Scaling mit grösse tab grösse erstellen 
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich zum ersten Mal mit HTML und CSS gearbeitet. Als Erstes habe ich mir VS Code heruntergeladen, zusammen mit der "Live Server" Extension. Als Nächstes habe ich mich auf w3schools.com in HTML eingelesen, um den Anfang zu vereinfachen. Mein größter Erfolg war, dass ich heute eine Verbindung zwischen zwei Webseiten hergestellt habe.
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
+- [ ] Bild und CV Anpassen
+- [ ] Im About me einen Teil für hobbys einbauen
+- [ ] Ein Ort für Kontakte
+- [ ] Im About me über die Ims etwas Colles Machen(Fällt mir noch nichts ein)
+
