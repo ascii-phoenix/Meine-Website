@@ -21,8 +21,16 @@
 
 ✍️ Heute habe ich zum ersten Mal mit HTML und CSS gearbeitet. Als Erstes habe ich mir VS Code heruntergeladen, zusammen mit der "Live Server" Extension. Als Nächstes habe ich mich auf w3schools.com in HTML eingelesen, um den Anfang zu vereinfachen. Mein größter Erfolg war, dass ich heute eine Verbindung zwischen zwei Webseiten hergestellt habe.
 
-- [ ] Bild und CV Anpassen
-- [ ] Im About me einen Teil für hobbys einbauen
-- [ ] Ein Ort für Kontakte
-- [ ] Im About me über die Ims etwas Colles Machen(Fällt mir noch nichts ein)
+## 23.5.2024
+- [x] Bild und CV Anpassen
+- [x] Im About me einen Teil für medien
+- [x] Ein Ort für Kontakte
+- [x] Im About me über die Ims etwas Colles Machen(Fällt mir noch nichts ein) PDF einführen
 
+✍️ Heute habe ich auf meiner Webseite einige bedeutende Verbesserungen vorgenommen. Ich habe zwei Schaltflächen programmiert, die zu meinem GitHub- und LinkedIn-Profil führen, was den Besuchern das Finden meiner beruflichen Profile erleichtert. Zusätzlich habe ich meinen Lebenslauf als PDF-Dokument eingebaut, sodass Interessierte diesen direkt herunterladen können. Das wichtigste Update war die Integration einer Kontaktsektion, die es den Besuchern ermöglicht, mich einfach und unkompliziert über die Webseite zu erreichen.
+
+## 31.5.2024
+- [ ] Bild auf der Homepage einfügen und die zwei Buttons an bessere Orte setzen
+- [ ] (wenn möglich) Bestätigungs-E-Mail bei Kontaktanfragen einbauen
+- [ ] Hover-Effekt bei den Medienbuttons
+- [ ] (wenn möglich) Ein paar Beispiele meiner früheren Projekte hinzufügen
