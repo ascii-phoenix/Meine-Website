@@ -34,3 +34,11 @@
 - [ ] (wenn möglich) Bestätigungs-E-Mail bei Kontaktanfragen einbauen
 - [ ] Hover-Effekt bei den Medienbuttons
 - [ ] (wenn möglich) Ein paar Beispiele meiner früheren Projekte hinzufügen
+      
+✍️ Heute habe ich hauptsächlich an Modul 122: Abläufe mit einer Scriptsprache automatisieren gearbeitet, da ich noch nicht so weit bin, wie ich gedacht habe. Bei der Aufgabe LA_122_1709_PunktNotation.docx haben wir mit den Methoden .Replace() und .ToLower() einen String verändert. Danach haben wir Get-Service wuauserv mit .stop() und .status verwendet. Zuletzt haben wir überprüft, wie viel MB im Ordner C:\Windows\Media\ sind. Bei der Aufgabe LLA_122_1710_SortierenProjizierenSelektieren habe ich gelernt, Daten zu sortieren, zu projizieren und zu filtern, indem ich verschiedene Cmdlets für die Untersuchung von Netzwerkadaptern, Diensten und Dateien verwendet habe.
+## 07.6.2024
+
+- [ ] Bild auf der Homepage einfügen und die zwei Buttons an bessere Orte setzen
+- [ ] (wenn möglich) Bestätigungs-E-Mail bei Kontaktanfragen einbauen
+- [ ] Hover-Effekt bei den Medienbuttons
+- [ ] (wenn möglich) Ein paar Beispiele meiner früheren Projekte hinzufügen
