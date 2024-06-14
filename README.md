@@ -39,6 +39,6 @@
 ## 07.6.2024
 
 - [ ] Bild auf der Homepage einfügen und die zwei Buttons an bessere Orte setzen
-- [ ] (wenn möglich) Bestätigungs-E-Mail bei Kontaktanfragen einbauen
+- [ ] anpassen das es auf ein Handy gut ausseht
 - [ ] Hover-Effekt bei den Medienbuttons
 - [ ] (wenn möglich) Ein paar Beispiele meiner früheren Projekte hinzufügen
