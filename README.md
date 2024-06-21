@@ -49,3 +49,8 @@
 - [ ] (wenn möglich) Ein paar Beispiele meiner früheren Projekte hinzufügen
 - [ ] Contacts besser aussehen lassen
 - [ ] Bestätigung erstellen bei Contacts
+
+✍️ Heute habe ich am Modul 122 gearbeitet und einen PowerShell-Code erstellt, der mir über eine API die Temperatur als Benachrichtigung ausgibt. Leider funktioniert der Trigger nicht, wenn ich mich einlogge, weshalb ich momentan im Projekt nicht weiterkomme.
+
+- [ ] Hover-Effekt bei den Medienbuttons
+- [ ] Contacts besser aussehen lassen
