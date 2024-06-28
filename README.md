@@ -4,7 +4,7 @@
 - Ich wollte eine eigene Webseite erstellen, um einen einfachen Überblick über mich und ein Projekt zu geben. Also ist es eine Erweiterung meine Github. Ausserdem wollte ich es einfach mach, auf mein LinkedIn hinzuweisen.
 ![](Website-gif.gif)
 - Beim Lebenslauf habe es wie auf dem Mockup gemacht. Zuerst habe ich nur ein Bild des CV abgebildet, zum Glück habe ich auf Satckoverflow eine coole Methode gefunden, um ein PDF im Web abzubilden.
-![](https://github.com/ascii-phoenix/ascii-phoenix-Lern-Periode-5/blob/main/Screenshot%202024-06-26%20172449.png)
+![]([https://github.com/ascii-phoenix/ascii-phoenix-Lern-Periode-5/blob/main/Screenshot%202024-06-26%20172449.png](https://github.com/ascii-phoenix/ascii-phoenix-Lern-Periode-5/blob/main/Screenshot%202024-06-26%20191456.png))
 - Da ich mich noch nicht mit Backend Development befasst habe. Benutzte ich für die E-Mail formspree.io. Das wurde uns von Herr Colic empfohlen, um unsere E-Mail-Adressen nicht direkt ins Internet zu setzen. Darum habe ich auch so eingebaut. Ich habe den Text in der Box eingefügt da es sonst Leer Aussicht.
 ![](https://github.com/ascii-phoenix/ascii-phoenix-Lern-Periode-5/blob/main/Screenshot%202024-06-26%20172449.png)
 
