@@ -61,4 +61,4 @@
 
 - [x] Hover-Effekt bei den Medienbuttons
 - [x] Contacts besser aussehen lassen
-Heute habe ich
+Heute habe ich einen Hover-Effekt zu meinen Medienbuttons hinzugefügt, um mehr Benutzerfeedback zu geben. Zusätzlich habe ich die Kontaktbereiche verbessert, indem ich sie zentriert und informativen Text eingebaut habe. Diese Änderungen machen die Seite optisch ansprechender und erleichtern die Nutzung, was zu einer besseren Benutzererfahrung beiträgt und die Interaktivität erhöht.
