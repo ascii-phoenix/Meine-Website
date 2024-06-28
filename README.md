@@ -2,10 +2,12 @@
 23.4 bis 25.6.2024
 
 - Ich wollte eine eigene Webseite erstellen, um einen einfachen Überblick über mich und ein Projekt zu geben. Also ist es eine Erweiterung meine Github. Ausserdem wollte ich es einfach mach, auf mein LinkedIn hinzuweisen.
-- Beim Lebenslauf habe es wie auf dem Mockup gemacht. Zuerst habe ich nur ein Bild des CV abgebildet, zum Glück habe ich auf Satckoverflow eine coole Methode gefunden, um ein PDF im Web abzubilden.
-- Da ich mich noch nicht mit Backend Development befasst habe. Benutzte ich für die E-Mail formspree.io. Das wurde uns von Herr Colic empfohlen, um unsere E-Mail-Adressen nicht direkt ins Internet zu setzen. Darum habe ich auch so eingebaut. Ich habe den Text in der Box eingefügt da es sonst Leer Aussicht.
-- 
 ![](Website-gif.gif)
+- Beim Lebenslauf habe es wie auf dem Mockup gemacht. Zuerst habe ich nur ein Bild des CV abgebildet, zum Glück habe ich auf Satckoverflow eine coole Methode gefunden, um ein PDF im Web abzubilden.
+- ![](Website-gif.gif)
+- Da ich mich noch nicht mit Backend Development befasst habe. Benutzte ich für die E-Mail formspree.io. Das wurde uns von Herr Colic empfohlen, um unsere E-Mail-Adressen nicht direkt ins Internet zu setzen. Darum habe ich auch so eingebaut. Ich habe den Text in der Box eingefügt da es sonst Leer Aussicht.
+- ![](Website-gif.gif)
+
 
 ## Grob-Planung
 
