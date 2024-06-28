@@ -69,6 +69,6 @@ Heute habe ich einen Hover-Effekt zu meinen Medienbuttons hinzugefügt, um mehr 
 ## Reflexion des Jahres
 Das Wichtigste was ich gelert habe ist das Objektorientierte programmieren mit C#. Das Verständnis für Ableiten hat meine Programmierfähigkeiten erheblich erweitert. Gantz cool war HTML und CSS da man alles für das internet kreiren kann.
 Rückblickend auf das Schuljahr 2023/2024 sollte ich zuerst die Grundstruktur eines Projekts aufbauen, bevor ich zusätzliche Funktionen hinzufüge. Es hilft nichts, wenn man drei Eingabemethoden hat, wenn das Hauptprogramm nicht funktioniert.
-Das was ich nächst jahr unbedingt anfange soll ist am anfang des Projektes überlegen was, 
-Was hat Ihnen am LA gefallen?
-Was würden Sie sich wünschen, das nächstes Jahr im LA anders wäre?
+Was ich nächstes Jahr unbedingt tun sollte, ist zu Beginn des Projekts zu überlegen, was für das Projekt essenziell ist. Außerdem sollte ich bereit sein, mehr Zeit in die Entwicklung von Modulen zu investieren als in das aktuelle Projekt.
+Was ich am meisten genossen habe, ist die Möglichkeit, von zuhause aus zu arbeiten. Da ich nicht pendeln muss, arbeite ich oft weiter, bis ich das aktuelle Arbeitspaket abgeschlossen habe. Das erleichtert den nahtlosen Übergang in die nächste Arbeitswoche.
+Deshalb wäre es grossartig, wenn wir mehr Online-Schule hätten.
