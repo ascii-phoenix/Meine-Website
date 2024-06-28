@@ -62,3 +62,14 @@
 - [x] Hover-Effekt bei den Medienbuttons
 - [x] Contacts besser aussehen lassen
 Heute habe ich einen Hover-Effekt zu meinen Medienbuttons hinzugefügt, um mehr Benutzerfeedback zu geben. Zusätzlich habe ich die Kontaktbereiche verbessert, indem ich sie zentriert und informativen Text eingebaut habe. Diese Änderungen machen die Seite optisch ansprechender und erleichtern die Nutzung, was zu einer besseren Benutzererfahrung beiträgt und die Interaktivität erhöht.
+
+## Reflexion Lern-Periode
+✍️ Im Nachhinein habe ich die Ziele des letzten Lern-Ateliers erreicht. Der Code ist nicht der beste, trotzdem bin ich sehr zufrieden, dass mein Code sehr leserlich und gut strukturiert ist. Obwohl ich fertig geworden bin, ist das Projekt für mich noch nicht beendet. Da ich meine Fähigkeiten und mein Wissen über die Informatik weiterentwickle, werde ich die Webseite immer wieder mal aktualisieren, um sie einigermaßen up-to-date zu halten.
+
+## Reflexion des Jahres
+Was haben Sie konkret gelernt dieses Jahr? (Technisch)
+Was haben Sie konkret gelernt dieses Jahr? (Arbeitsweise)
+Was möchten Sie selber nächstes Jahr anders machen im LA?
+Was hat Ihnen am LA gefallen?
+Was würden Sie sich wünschen, das nächstes Jahr im LA anders wäre?
+![image](https://github.com/ascii-phoenix/ascii-phoenix-Lern-Periode-5/assets/142593414/18bee55e-1495-4466-b79c-b4f43e17f5c7)
