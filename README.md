@@ -1,6 +1,5 @@
 # Meine Persönliche Webseite
 23.4 bis 25.6.2024
-![Uploading Screenshot 2024-06-26 191456.png…]()
 
 - Ich wollte eine eigene Webseite erstellen, um einen einfachen Überblick über mich und ein Projekt zu geben. Also ist es eine Erweiterung meine Github. Ausserdem wollte ich es einfach mach, auf mein LinkedIn hinzuweisen.
 - Beim Lebenslauf habe es wie auf dem Mockup gemacht. Zuerst habe ich nur ein Bild des CV abgebildet, zum Glück habe ich auf Satckoverflow eine coole Methode gefunden, um ein PDF im Web abzubilden.
