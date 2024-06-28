@@ -31,5 +31,41 @@ body {
   }
   
   p {
-    text-align: center;
-  }
+    max-width: 50em; /* 800px in em units */
+    margin: 1.25em auto; /* 20px in em units */
+    padding: 0.625em; /* 10px in em units */
+    background: white;
+    border-radius: 0.3125em; /* 5px in em units */
+    font-size: 1.5em;
+}
+
+@media (max-width: 37.5em) { /* 600px in em units */
+    nav ul li {
+        display: block;
+        margin: 0.625em 0; /* 10px in em units */
+    }
+
+    p {
+        margin: 0.625em; /* 10px in em units */
+        padding: 0.9375em; /* 15px in em units */
+    }
+}
+#Ski {
+  width: 100%; 
+	object-fit: cover;
+	object-position: 50%
+}
+
+footer {
+  text-align: center;
+  padding: 60px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.5em;
+  font-style: oblique;
+  background : rgba(0, 0, 0, 0);
+}

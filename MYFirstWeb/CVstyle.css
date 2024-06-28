@@ -34,3 +34,8 @@ object {
   justify-content: center;  /* Centers the content horizontally */
   margin: 0 auto;
 }
+footer {
+  text-align: center;
+  font-size: 0.5em;
+  font-style: oblique;
+}

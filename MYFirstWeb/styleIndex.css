@@ -56,3 +56,19 @@ nav ul li a:hover {
   left: 52%;
   transform: translate(-50%, -50%);
 }
+
+.link img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+}
+p {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: oblique;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.5em;
+  font-style: oblique;
+}
