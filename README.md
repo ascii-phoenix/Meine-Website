@@ -3,6 +3,7 @@
 
 
 ![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/ascii-phoenix/ascii-phoenix-Lern-Periode-5/blob/main/Website-gif.gif))
+
 ## Grob-Planung
 
 1. Mit meinen momentanen Noten bin ich noch nicht zufrieden, auch wenn sie genügend sind.
