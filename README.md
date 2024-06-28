@@ -59,5 +59,6 @@
 
 ✍️ Heute habe ich am Modul 122 gearbeitet und einen PowerShell-Code erstellt, der mir über eine API die Temperatur als Benachrichtigung ausgibt. Leider funktioniert der Trigger nicht, wenn ich mich einlogge, weshalb ich momentan im Projekt nicht weiterkomme.
 
-- [ ] Hover-Effekt bei den Medienbuttons
-- [ ] Contacts besser aussehen lassen
+- [x] Hover-Effekt bei den Medienbuttons
+- [x] Contacts besser aussehen lassen
+Heute habe ich
