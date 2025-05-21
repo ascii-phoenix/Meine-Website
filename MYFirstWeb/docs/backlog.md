@@ -1,2 +1,0 @@
-- [ ] Card für About Me Text
-- [ ] Kontakt-Formular
