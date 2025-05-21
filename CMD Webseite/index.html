@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eloi Knecht - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .section-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #6B46C1;
+      display: block !important;
+    }
+    .section-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(107, 70, 193, 0.2);
+    }
+    .fade-in {
+      animation: fadeIn 0.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #6B46C1, #4C1D95);
+    }
+    .nav-link {
+      color: #E5E7EB;
+    }
+    .nav-link:hover {
+      color: #A78BFA;
+    }
+    nav {
+      z-index: 50;
+      padding-top: 10rem; /* Increase padding to create space for the button */
+    }
+    #mobile-menu {
+      z-index: 70;
+      padding-top: 4rem;
+    }
+    .cmd-view {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', Courier, monospace;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 1rem;
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2000;
+    }
+    .cmd-view input {
+      background: none;
+      border: none;
+      color: #0f0;
+      font-family: 'Courier New', Courier, monospace;
+      width: 100%;
+      outline: none;
+    }
+    .cmd-output p {
+      margin: 0.5rem 0;
+    }
+    .cmd-view input::placeholder {
+      color: #0a0;
+    }
+    #toggle-btn {
+      border: 2px solid white;
+      z-index: 10000 !important;
+      bottom: 1rem; /* Position the button at the bottom */
+      right: 1rem; /* Align the button to the right */
+      position: fixed; /* Ensure it stays in place */
+      top: auto; /* Remove the top positioning */
+    }
+  </style>
+</head>
+<body class="bg-gray-800 text-gray-200">
+  <!-- Toggle Button -->
+  <div class="fixed top-4 right-4 z-[10000]">
+    <button id="toggle-btn" class="bg-purple-400 text-white px-2 py-1 rounded-lg hover:bg-purple-300 text-xs" aria-label="Zur CMD-Ansicht wechseln">
+      Zur CMD-Ansicht wechseln
+    </button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="gradient-bg text-white p-4 sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-bold">Eloi Knecht</h1>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none" aria-label="Menü umschalten">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="nav-links" class="hidden md:flex space-x-6">
+        <li><a href="#über-mich" class="nav-link hover:underline">Über mich</a></li>
+        <li><a href="#bildung" class="nav-link hover:underline">Bildung</a></li>
+        <li><a href="#projekte" class="nav-link hover:underline">Projekte</a></li>
+        <li><a href="#fähigkeiten" class="nav-link hover:underline">Fähigkeiten</a></li>
+        <li><a href="#interessen" class="nav-link hover:underline">Interessen</a></li>
+        <li><a href="#kontakt" class="nav-link hover:underline">Kontakt</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="hidden mt-4 md:hidden">
+      <ul class="flex flex-col space-y-2 text-center">
+        <li><a href="#über-mich" class="nav-link hover:underline">Über mich</a></li>
+        <li><a href="#bildung" class="nav-link hover:underline">Bildung</a></li>
+        <li><a href="#projekte" class="nav-link hover:underline">Projekte</a></li>
+        <li><a href="#fähigkeiten" class="nav-link hover:underline">Fähigkeiten</a></li>
+        <li><a href="#interessen" class="nav-link hover:underline">Interessen</a></li>
+        <li><a href="#kontakt" class="nav-link hover:underline">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Normal View -->
+  <div id="normal-view" class="min-h-screen p-4 md:p-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Über mich -->
+      <section id="über-mich" class="section-card bg-gray-700 p-6 rounded-xl shadow-lg mb-8 fade-in">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Über mich</h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="w-32 h-32 bg-gray-600 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0 flex items-center justify-center">
+            <img src="Eloi_Knecht.png" alt="Profilbild von Eloi Knecht" class="w-full h-full rounded-full object-cover">
+          </div>
+          <div>
+            <p class="text-gray-200">Hallo, ich bin Eloi Knecht, angehender Informatiker mit einer Leidenschaft für Programmieren und kreative Problemlösungen. Neben meiner technischen Ausbildung finde ich im Sport und in der Musik den perfekten Ausgleich. Seit über acht Jahren fahre ich begeistert Ski. Ausserdem spiele ich seit zehn Jahren Cello.</p>
+            <p class="mt-4 text-gray-200"><strong>Geburtsdatum:</strong> 02.11.2006</p>
+            <p><strong>Adresse:</strong> Buhaldenstrasse 20, 5023 Biberstein</p>
+            <p><strong>Heimatort:</strong> Will SG</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bildung -->
+      <section id="bildung" class="section-card bg-gray-700 p-6 rounded-xl shadow-lg mb-8 fade-in">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Bildung</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl md:text-2xl font-medium text-white">Alte Kanti Aarau, IMS</h3>
+            <p class="text-gray-400 text-sm md:text-base">08/2023 – 05/2025</p>
+            <p class="text-gray-200">Fokus: Informatik und Wirtschaft</p>
+            <p class="text-gray-200">Hauptfächer: Mathematik, Informatik, Wirtschaft</p>
+          </div>
+          <div>
+            <h3 class="text-xl md:text-2xl font-medium text-white">Bezirksschule Zelgli</h3>
+            <p class="text-gray-400 text-sm md:text-base">08/2022 – 07/2023</p>
+            <p class="text-gray-200">Abgeschlossene Pflichtschulzeit</p>
+            <p class="text-gray-200">Lieblingsfächer: Mathematik, Informatik</p>
+          </div>
+          <div>
+            <h3 class="text-xl md:text-2xl font-medium text-white">Sekundarschule Stock</h3>
+            <p class="text-gray-400 text-sm md:text-base">08/2019 – 07/2023</p>
+            <p class="text-gray-200">Abgeschlossene Sekundarschule mit Beförderung</p>
+            <p class="text-gray-200">Hauptfächer: Mathematik, P&R</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projekte -->
+      <section id="projekte" class="section-card bg-gray-700 p-6 rounded-xl shadow-lg mb-8 fade-in">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Projekte</h2>
+        <ul class="list-disc pl-5 text-gray-200">
+          <li>Projekt A: Billardsimulation in Unity</li>
+          <li>Projekt B: Web API in ASP.NET Core</li>
+          <li>Projekt C: XLSX zu CSV Konverter (JavaScript, SheetJS)</li>
+        </ul>
+      </section>
+
+      <!-- Fähigkeiten -->
+      <section id="fähigkeiten" class="section-card bg-gray-700 p-6 rounded-xl shadow-lg mb-8 fade-in">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Fähigkeiten</h2>
+        <h3 class="text-lg md:text-xl font-medium text-white">Sprachen</h3>
+        <ul class="list-disc pl-5 text-gray-200 mb-4">
+          <li>Deutsch (Muttersprache)</li>
+          <li>Englisch (Fließend)</li>
+          <li>Französisch (Grundkenntnisse)</li>
+        </ul>
+        <h3 class="text-lg md:text-xl font-medium text-white">ICT-Fähigkeiten</h3>
+        <ul class="list-disc pl-5 text-gray-200">
+          <li>Programmierung: Python, C#, HTML, CSS, JavaScript, MSSQL, AWS, PowerShell</li>
+          <li>Werkzeuge: Microsoft Visual Studio 2022, SheetJS</li>
+        </ul>
+      </section>
+
+      <!-- Interessen -->
+      <section id="interessen" class="section-card bg-gray-700 p-6 rounded-xl shadow-lg mb-8 fade-in">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Interessen</h2>
+        <ul class="list-disc pl-5 text-gray-200">
+          <li>Cello (10 Jahre)</li>
+          <li>Ski fahren (8 Jahre)</li>
+        </ul>
+      </section>
+
+      <!-- Kontakt -->
+      <section id="kontakt" class="section-card bg-gray-700 p-6 rounded-xl shadow-lg fade-in">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Kontakt</h2>
+        <p class="text-gray-200 mb-2"><strong>Email:</strong> <a href="mailto:Eloi.Knecht@gmx.ch" class="text-purple-400 hover:underline">Eloi.Knecht@gmx.ch</a></p>
+        <p class="text-gray-200 mb-4"><strong>Telefon:</strong> +41774793392</p>
+        <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
+          <a href="https://www.linkedin.com/in/eloi-a-knecht/" target="_blank" rel="noopener noreferrer" class="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-600 text-center sm:px-3 sm:py-1.5 pointer-events-auto" aria-label="Besuche Elois LinkedIn-Profil">LinkedIn</a>
+          <a href="https://github.com/ascii-phoenix" target="_blank" rel="noopener noreferrer" class="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-600 text-center sm:px-3 sm:py-1.5 pointer-events-auto" aria-label="Besuche Elois GitHub-Profil">GitHub</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- CMD View -->
+  <div id="cmd-view" class="cmd-view">
+    <div id="cmd-output" class="cmd-output"></div>
+    <div>
+      <span>C:\Users\You></span>
+      <input type="text" id="cmd-input" placeholder="Type 'help' for commands" autocomplete="off">
+    </div>
+  </div>
+
+  <script>
+    // XLSX Processing Script
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
+    }
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error('XLSX-Verarbeitungsfehler:', e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
+
+    // Portfolio Scripts
+    console.log('Seite geladen');
+    const normalView = document.getElementById('normal-view');
+    console.log('Normal View:', normalView ? 'Found' : 'Not found');
+    const cmdView = document.getElementById('cmd-view');
+    console.log('CMD View:', cmdView ? 'Found' : 'Not found');
+    const toggleBtn = document.getElementById('toggle-btn');
+    console.log('Toggle Button:', toggleBtn ? 'Found' : 'Not found');
+    const cmdInput = document.getElementById('cmd-input');
+    console.log('CMD Input:', cmdInput ? 'Found' : 'Not found');
+    const cmdOutput = document.getElementById('cmd-output');
+    console.log('CMD Output:', cmdOutput ? 'Found' : 'Not found');
+
+    if (toggleBtn) {
+      console.log('Schaltfläche initialisiert');
+      toggleBtn.addEventListener('click', () => {
+        console.log('Schaltfläche geklickt');
+        if (normalView && cmdView) {
+          if (normalView.style.display !== 'none') {
+            normalView.style.display = 'none';
+            cmdView.style.display = 'block';
+            toggleBtn.textContent = 'Zur Normalansicht wechseln';
+            if (cmdInput) cmdInput.focus();
+          } else {
+            normalView.style.display = 'block';
+            cmdView.style.display = 'none';
+            toggleBtn.textContent = 'Zur CMD-Ansicht wechseln';
+          }
+        } else {
+          console.error('Normal View or CMD View not found during toggle');
+        }
+      });
+    } else {
+      console.error('Schaltfläche nicht gefunden!');
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        console.log('Mobile Menü umgeschaltet');
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    const content = {
+      about: `Hallo, ich bin Eloi Knecht, angehender Informatiker mit einer Leidenschaft für Programmieren und kreative Problemlösungen. Neben meiner technischen Ausbildung finde ich im Sport und in der Musik den perfekten Ausgleich. Seit über acht Jahren fahre ich begeistert Ski. Ausserdem spiele ich seit zehn Jahren Cello.`,
+      projects: `- Projekt A: Billardsimulation in Unity\n- Projekt B: Web API in ASP.NET Core\n- Projekt C: XLSX zu CSV Konverter (JavaScript, SheetJS)`,
+      contact: `Email: Eloi.Knecht@gmx.ch\nLinkedIn: https://www.linkedin.com/in/eloi-a-knecht/\nGitHub: https://github.com/ascii-phoenix`,
+      help: `Verfügbare Befehle: about, projects, contact, help, clear`
+    };
+
+    function displayOutput(text) {
+      if (cmdOutput) {
+        const p = document.createElement('p');
+        p.textContent = text;
+        cmdOutput.appendChild(p);
+        cmdOutput.scrollTop = cmdOutput.scrollHeight;
+      }
+    }
+
+    function handleCommand(command) {
+      if (cmdOutput) {
+        command = command.trim().toLowerCase();
+        if (command === 'help') {
+          displayOutput(content.help);
+        } else if (command === 'about' || command === 'projects' || command === 'contact') {
+          displayOutput(content[command]);
+        } else if (command === 'clear') {
+          cmdOutput.innerHTML = '';
+        } else {
+          displayOutput('Fehler: Unbekannter Befehl. Tippe "help" für verfügbare Befehle.');
+        }
+        displayOutput('C:\\Users\\You> ');
+      }
+    }
+
+    if (cmdInput) {
+      cmdInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const command = cmdInput.value;
+          if (cmdOutput) displayOutput(`C:\\Users\\You> ${command}`);
+          handleCommand(command);
+          if (cmdInput) cmdInput.value = '';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
